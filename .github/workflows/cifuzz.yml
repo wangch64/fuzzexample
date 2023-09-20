@@ -11,7 +11,7 @@ jobs:
      id: build
      uses: google/oss-fuzz/infra/cifuzz/actions/build_fuzzers@master
      with:
-       oss-fuzz-project-name: 'fuzzexample'
+       oss-fuzz-project-name: 'example'
        language: c++
    - name: Run Fuzzers
      uses: google/oss-fuzz/infra/cifuzz/actions/run_fuzzers@master
