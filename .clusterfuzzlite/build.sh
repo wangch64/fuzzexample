@@ -1,6 +1,6 @@
 #!/bin/bash -eu
 
 
-$CXX $CXXFLAGS -std=c++11 -Ilib/ \
-    $SRC/example/main.cpp -o $OUT/parse_fuzzer \
+$C $CFLAGS -Ilib/ \
+    $SRC/example/ftest1.c -o $OUT/parse_fuzzer \
     $LIB_FUZZING_ENGINE /usr/lib/libFuzzingEngine.a
